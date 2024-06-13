@@ -1,0 +1,39 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import '@/styles/globals.css';
+---
+
+<Layout title='Easybank landing page.'>
+  <Header />
+  <main>
+    <section
+      class='bg-[#F4F5F7] px-6 pb-[5.5rem] md:px-[10.31rem] md:py-[10.63rem]'
+    >
+      <div
+        class='flex flex-col items-center gap-8 text-center md:items-start md:gap-9 md:text-left'
+      >
+        <div class='flex flex-col gap-4 md:gap-6'>
+          <h1
+            class='w-[20.4375rem] text-[2.5rem] font-light leading-normal tracking-[-0.04463rem] text-[#2D314D] md:w-[25.125rem] md:text-[3.5rem] md:leading-[4rem] md:tracking-[-0.0625rem]'
+          >
+            Next generation digital banking
+          </h1>
+          <p
+            class='w-[20.4375rem] text-[0.9375rem] font-normal leading-[1.5625rem] tracking-[-0.01463rem] text-[#9597A5] md:w-[27.9375rem] md:text-lg md:tracking-[-0.01756rem]'
+          >
+            Take your financial life online. Your Easybank account will be a
+            one-stop-shop for spending, saving, budgeting, investing, and much
+            more.
+          </p>
+        </div>
+        <button
+          type='button'
+          class='headerBtn hidden h-[2.75rem] w-[10.1875rem] cursor-pointer items-center justify-center rounded-[1.375rem] text-sm font-bold leading-7 text-white transition-all duration-300 ease-in hover:opacity-40 md:flex lg:flex'
+        >
+          Request Invite
+        </button>
+      </div>
+    </section>
+  </main>
+</Layout>
